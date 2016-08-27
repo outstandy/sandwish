@@ -1,0 +1,13 @@
+@import 'neat/neat';
+@import 'utilities/colors';
+@import 'utilities/type';
+
+body {
+  color: $red;
+}
+
+h1 {
+  &:hover {
+    color: darken($red, 10%);
+  }
+}

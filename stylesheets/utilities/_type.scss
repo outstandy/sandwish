@@ -1,0 +1,50 @@
+//Font stack
+$text: "adelle-sans", Helvetica, sans-serif;
+$headline: "bungee", Helvetica, sans-serif;
+
+//Font styles
+.text {
+  font-family: $text;
+}
+
+.headline {
+  font-family: $headline;
+}
+
+//Type weights
+.type-regular {
+  font-weight: 400;
+}
+
+.type-bold {
+  font-weight: 700;
+}
+
+.type-black {
+  font-weight: 800;
+}
+
+//Type sizes
+body {
+  font-size: 18px;
+}
+
+.type-alpha{
+  font-size: 0.563em
+}
+
+.type-beta {
+  font-size: 0.75em
+}
+
+.type-gamma {
+  font-size: 1em
+}
+
+.type-delta {
+  font-size: 1.3333em
+}
+
+.type-epsilon {
+  font-size: 1.7777em
+}
