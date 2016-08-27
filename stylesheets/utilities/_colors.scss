@@ -4,10 +4,15 @@ $blue: #425062;
 $lgt-blue: #6982A2;
 $lgt-gray: #FAFAFA;
 $mid-gray: #E6E6E6;
+$white: #FFFFFF;
 
 //Color classes
 .red {
   color: $red;
+}
+
+.bg-red {
+  background-color: $red;
 }
 
 .blue {
@@ -24,4 +29,8 @@ $mid-gray: #E6E6E6;
 
 .mid-gray {
   color: $mid-gray;
+}
+
+.bg-white {
+  background-color: $white;
 }

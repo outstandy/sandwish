@@ -1,7 +1,11 @@
+//Patterns and styles used across the whole app
 @import 'neat/neat';
 @import 'utilities/colors';
 @import 'utilities/type';
 @import 'utilities/layout';
+
+//Component styles
+@import 'components/tile';
 
 html {
   background-color: $lgt-gray;
