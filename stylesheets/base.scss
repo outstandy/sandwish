@@ -3,11 +3,11 @@
 @import 'utilities/type';
 
 body {
-  color: $red;
+  color: $blue;
 }
-
-h1 {
-  &:hover {
-    color: darken($red, 10%);
-  }
-}
+//
+// h1 {
+//   &:hover {
+//     color: darken($red, 10%);
+//   }
+// }

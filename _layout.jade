@@ -1,9 +1,9 @@
 doctype
 html
-  head
-    link(rel="stylesheet" href="/stylesheets/nuthin.css")
-    link(rel="stylesheet" href="/stylesheets/base.css")
-    script(src="https://use.typekit.net/qbd7zdy.js")
-    script(try{Typekit.load({ async: true });}catch(e){})
+  include ./components/head.jade
+  
   body
+    include ./components/nav.jade
     != yield
+    include ./components/footer.jade
+    
