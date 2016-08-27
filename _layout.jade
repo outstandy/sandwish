@@ -5,5 +5,8 @@ html
   body
     include ./components/nav.jade
     != yield
+    script (src="https://npmcdn.com/react@15.3.1/dist/react-with-addons.js")
+    script (src="https://npmcdn.com/react-dom@15.3.1/dist/react-dom.js")
+    script (src="app.js")
     include ./components/footer.jade
     

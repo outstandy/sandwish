@@ -1,6 +1,11 @@
 @import 'neat/neat';
 @import 'utilities/colors';
 @import 'utilities/type';
+@import 'utilities/layout';
+
+html {
+  background-color: $lgt-gray;
+}
 
 body {
   color: $blue;
