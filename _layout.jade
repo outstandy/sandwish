@@ -1,6 +1,10 @@
 doctype
 html
-  head
-    link(rel="stylesheet" href="/main.css")
+  include ./components/head.jade
+  
   body
+    include ./components/nav.jade
     != yield
+    script(type="text/babel" src="app.js")
+    include ./components/footer.jade
+    

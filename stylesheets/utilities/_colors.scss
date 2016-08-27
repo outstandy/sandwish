@@ -1,0 +1,36 @@
+//Set color variables
+$red: #FF0048;
+$blue: #425062;
+$lgt-blue: #6982A2;
+$lgt-gray: #FAFAFA;
+$mid-gray: #E6E6E6;
+$white: #FFFFFF;
+
+//Color classes
+.red {
+  color: $red;
+}
+
+.bg-red {
+  background-color: $red;
+}
+
+.blue {
+  color: $blue;
+}
+
+.lgt-blue {
+  color: $lgt-blue;
+}
+
+.lgt-gray {
+  color: $lgt-gray;
+}
+
+.mid-gray {
+  color: $mid-gray;
+}
+
+.bg-white {
+  background-color: $white;
+}
