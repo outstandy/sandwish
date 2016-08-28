@@ -1,0 +1,13 @@
+nav{
+  -webkit-transition: all 0.15s ease-out;
+  height: 4.4444444em;
+  @include media(max-width $med-screen){
+    height: 3.5em;
+  }
+}
+
+.hide-small{
+  @include media(max-width $sml-screen){
+    visibility: hidden;
+  }
+}

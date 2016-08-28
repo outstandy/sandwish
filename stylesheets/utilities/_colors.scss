@@ -1,6 +1,7 @@
 //Set color variables
 $red: #FF0048;
 $blue: #425062;
+$green: #00DBA2;
 $lgt-blue: #6982A2;
 $lgt-gray: #FAFAFA;
 $mid-gray: #E6E6E6;
@@ -11,8 +12,26 @@ $white: #FFFFFF;
   color: $red;
 }
 
+a.red {
+  -webkit-transition: color 0.15s ease-out;
+  &:hover {
+    color: darken($red, 10%);
+  }
+}
+
 .bg-red {
   background-color: $red;
+}
+
+button.bg-red {
+  -webkit-transition: background-color 0.15s ease-out;
+  &:hover {
+    background-color: darken($red, 5%);
+  }
+}
+
+.bg-green {
+  background-color: $green;
 }
 
 .blue {
@@ -31,6 +50,18 @@ $white: #FFFFFF;
   color: $mid-gray;
 }
 
+.bg-mid-gray {
+  background-color: $mid-gray;
+}
+
+.white {
+  color: $white;
+}
+
 .bg-white {
   background-color: $white;
+}
+
+.bg-none {
+  background: none;
 }

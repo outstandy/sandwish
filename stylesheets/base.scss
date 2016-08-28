@@ -1,10 +1,15 @@
-//Patterns and styles used across the whole app
+//Basic, broad styles used across the whole app
 @import 'neat/neat';
+@import 'utilities/layout';
 @import 'utilities/colors';
 @import 'utilities/type';
-@import 'utilities/layout';
 
-//Component styles
+//More granular styles
+@import 'patterns/borders';
+
+//Component-specific styles
+@import 'components/nav';
+@import 'components/footer';
 @import 'components/tile';
 
 html {
@@ -20,3 +25,16 @@ body {
 //     color: darken($red, 10%);
 //   }
 // }
+
+button, .tile {
+  border-radius: 2px;
+}
+
+button {
+  cursor: pointer;
+}
+
+input[type="range"]{
+  height: 0.555em;
+  border-radius: 1em;
+}

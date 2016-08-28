@@ -25,22 +25,67 @@ $headline: "bungee", Helvetica, sans-serif;
 }
 
 //Type sizes
-.type-alpha{
-  font-size: 0.563em
+.type-alpha {
+  font-size: 0.563em;
 }
 
 .type-beta {
-  font-size: 0.75em
+  font-size: 0.75em;
+  @include media(max-width $med-screen){
+    font-size: 0.563em;
+  }
 }
 
 .type-gamma {
-  font-size: 1em
+  font-size: 1em;
+  @include media(max-width $med-screen){
+    font-size: 0.75em;
+  }
 }
 
 .type-delta {
-  font-size: 1.3333em
+  font-size: 1.3333em;
+  @include media(max-width $med-screen){
+    font-size: 1em;
+  }
 }
 
 .type-epsilon {
-  font-size: 1.7777em
+  font-size: 1.7777em;
+  @include media(max-width $med-screen){
+    font-size: 1.3333em;
+  }
+}
+
+.type-omega {
+  font-size: 2.369em;
+  @include media(max-width $med-screen){
+  	font-size: 1.7777em;
+  }
+}
+
+//Alignments
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.v-bottom {
+  vertical-align: bottom;
+}
+
+//Casing
+.caps {
+  text-transform: uppercase;
+}
+
+.tracked {
+  letter-spacing: 0.05em;
 }

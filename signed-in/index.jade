@@ -1,0 +1,30 @@
+h1.headline.type-regular.type-epsilon.red.med-top-margin.center Prepare your stomach
+h2.text.type-regular.type-delta.blue.sml-top-margin.lrg-btm-margin.center You were born for this.
+
+.row
+  .lrg-4.lrg-push-4.sml-12.sml-btm-margin
+    form
+      label.text.lgt-blue.type-beta.caps.tracked Deliver it
+      select.width-100.bg-white.sml-pad.sml-top-margin.sml-btm-margin.text.blue.type-gamma
+        option Now
+        option 12 PM
+        option 1 PM
+      label.text.lgt-blue.type-beta.caps.tracked Send it to
+      select.width-100.bg-white.sml-pad.sml-top-margin.sml-btm-margin.text.blue.type-gamma
+        option The office
+        option Offsite
+        option Narnia
+    a(href="/order")
+      button.lrg-12.bg-red.center.headline.text-400.type-delta.sml-pad.white.border-none.lrg-btm-margin.med-top-margin Make it
+  .lrg-4.sml-12
+    p.text.lgt-blue.type-beta.tracked.caps.sml-btm-margin Most recent order
+    .lrg-12.tile.bg-white.med-btm-margin.order-card
+      include ../components/alert-bar-delivered.jade
+      .med-pad
+        p.text.type-gamma.red.sml-btm-margin Order Time
+        p.text.type-gamma.blue Meat on Bread
+        p.text.lgt-blue.type-beta.sml-btm-margin Cheese, Condiments, Toppings
+        p.text.type-gamma.blue.sml-btm-pad.btm-border Side
+        p.text.red.sml-top-pad.type-delta.right $8.00
+    a(href="/confirm")
+      button.lrg-12.red.center.text.text-400.type-gamma.bg-none.border-none.lrg-btm-margin Reorder?

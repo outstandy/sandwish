@@ -1,11 +1,26 @@
 .tile {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
+  min-height: 4em;
+  border: 1px solid $mid-gray;
   float: left;
+  cursor: pointer;
+  @include media(min-width $lrg-screen){
+    @include omega(4n);
+  }
+  @include media(min-width $med-screen max-width $lrg-screen){
+    @include omega(5n);
+  }
+  @include media(max-width $med-screen){
+    @include omega(4n);
+  }
+  -webkit-transition: all 0.15s ease-out;
+  &:hover:not(.order-card) {
+    color: $red;
+    border: 1px solid $red;
+    cursor: pointer;
+  }
 }
 
-.block {
-  display: block;
-  float: left;
+.added {
+  color: $red;
+  border: 1px solid $red;
 }
