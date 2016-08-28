@@ -183,11 +183,6 @@ var OrderFlow = React.createClass({
     var capProp;
     var childArray;
 
-    var _log = function(e){
-      childArray = e.target.children;
-      console.log(childArray[0].innerHTML);
-    }.bind(this);
-
     var meatMap = this.props.meats.map(function(meat, index){
       return (
         <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
@@ -224,7 +219,6 @@ var OrderFlow = React.createClass({
 
     var condimentMap = this.props.condiments.map(function(condiment, index){
       return (
-        // <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
         <div className="lrg-6 med-6 small-12 sml-btm-margin" key={index}>
           <label className="text lgt-blue type-beta tracked caps type-bold">{condiment}</label>
           <input className="bg-white border width-100 sml-top-margin" type="range" min="1" max="4" step="1" />
@@ -234,7 +228,7 @@ var OrderFlow = React.createClass({
 
     var sideMap = this.props.sides.map(function(side, index){
       return (
-        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index} onClick={_log.bind(this)}>
+        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
           <p className="text type-gamma abs pos-btm-0 sml-btm-pad center width-100" >{side}</p>
         </div>
       )
@@ -276,7 +270,7 @@ var OrderFlow = React.createClass({
       </div>
       <div className="lrg-4 sml-12 lrg-push-2">
         <OrderBox />
-        <a href="/confirm">
+        <a href="./confirm">
           <button className="lrg-12 bg-red center headline text-400 type-delta sml-pad white border-none lrg-btm-margin">Place Order</button>
         </a>
       </div>
