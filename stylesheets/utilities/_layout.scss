@@ -137,6 +137,19 @@ $sml-screen: 320px;
   }
 }
 
+.med-push-2 {
+  @include media(min-width $med-screen max-width $lrg-screen){
+    @include shift(2);
+  }
+}
+
+.med-push-4 {
+  @include media(min-width $med-screen max-width $lrg-screen){
+    @include shift(4);
+  }
+}
+
+
 
 
 //Margins
@@ -169,6 +182,10 @@ $sml-screen: 320px;
 }
 
 //Padding
+
+.x-sml-pad {
+  padding: 0.357em;
+}
 .sml-pad {
   padding: 0.5555555em;
 }
