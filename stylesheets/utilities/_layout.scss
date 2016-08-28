@@ -116,6 +116,13 @@ $sml-screen: 320px;
 }
 
 //Shifts
+.lrg-push-1 {
+  @include shift(1);
+  @include media(max-width $lrg-screen){
+    @include shift(0);
+  }
+}
+
 .lrg-push-2 {
   @include shift(2);
   @include media(max-width $lrg-screen){

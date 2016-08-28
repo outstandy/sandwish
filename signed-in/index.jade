@@ -3,11 +3,26 @@ h2.text.type-regular.type-delta.blue.lrg-btm-margin Something something somethin
 
 .row
   .lrg-4.lrg-push-4.sml-12.sml-btm-margin
-    p.text.type-gamma Delivery for: 
-    a(href="#" class="red") right now
-.row
-  a(href="/order")
-    button.lrg-4.sml-12.lrg-push-4.bg-red.center.headline.text-400.type-delta.sml-pad.white.border-none Make it
-.row
-  a(href="/confirm")
-    button.lrg-4.border-red.red.center.headline.text-400.type-delta.sml-pad Reorder
+    form
+      label.text.lgt-blue.type-beta.tracked.caps.type-bold Make it
+      select.width-100.bg-white.sml-pad.sml-top-margin.med-btm-margin
+        option Option 1
+        option Option 2
+        option Option 3
+      label.text.lgt-blue.type-beta.tracked.caps.type-bold.sml-btm-margin Send it
+      select.width-100.bg-white.sml-pad.sml-top-margin
+        option Option 1
+        option Option 2
+        option Option 3
+    a(href="/order")
+      button.lrg-12.bg-red.center.headline.text-400.type-delta.sml-pad.white.border-none.sml-btm-margin.med-top-margin Make it
+  .lrg-4.sml-12
+    p.text.lgt-blue.type-beta.tracked.caps.type-bold.sml-btm-margin Last order
+    .lrg-12.tile.bg-white.med-btm-margin.med-pad.order-card
+      p.text.type-gamma.red.sml-btm-margin Order Time
+      p.text.type-gamma.blue Meat on Bread
+      p.text.lgt-blue.type-beta.sml-btm-margin Cheese, Condiments, Toppings
+      p.text.type-gamma.blue.sml-btm-pad.btm-border Side
+      p.text.red.sml-top-pad.type-delta.right $8.00
+    a(href="/confirm")
+      button.lrg-12.border-none.red.center.text.text-400.type-delta.bg-none Reorder

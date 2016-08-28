@@ -30,6 +30,10 @@ button, .tile {
   border-radius: 2px;
 }
 
+button {
+  cursor: pointer;
+}
+
 input[type="range"]{
   height: 0.555em;
   border-radius: 1em;

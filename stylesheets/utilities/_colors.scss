@@ -16,7 +16,6 @@ $white: #FFFFFF;
   -webkit-transition: background-color 0.15s ease-out;
   &:hover {
     background-color: darken($red, 5%);
-    cursor: pointer;
   }
 }
 
@@ -46,4 +45,8 @@ $white: #FFFFFF;
 
 .bg-white {
   background-color: $white;
+}
+
+.bg-none {
+  background: none;
 }
