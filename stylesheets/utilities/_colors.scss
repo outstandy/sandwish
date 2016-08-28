@@ -34,3 +34,8 @@ $white: #FFFFFF;
 .bg-white {
   background-color: $white;
 }
+
+//Borders
+.btm-border {
+  border-bottom: 1px solid $mid-gray;
+}

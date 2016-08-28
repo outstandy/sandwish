@@ -1,1 +1,32 @@
 //Breakpoint assignments
+$lrg-screen: 1024px;
+$med-screen: 768px;
+$sml-screen: 320px;
+
+//Grid bits
+.outer-container {
+  @include media(max-width $lrg-screen){
+    @include outer-container(38.888888889em);
+  }
+  @include media(max-width $med-screen){
+    @include outer-container(17.777777778em);
+  }
+  @include outer-container(56.888888889em);
+}
+
+.row {
+  @include row();
+}
+
+.lrg-12 {
+  @include span-columns(12);
+}
+.lrg-9 {
+  @include span-columns(9);
+}
+.lrg-4 {
+  @include span-columns(4);
+}
+.lrg-3 {
+  @include span-columns(3);
+}

@@ -1,10 +1,10 @@
 doctype
 html
   include ./components/head.jade
-  
   body
     include ./components/nav.jade
-    != yield
-    script(type="text/babel" src="app.js")
+    .outer-container
+      != yield
+    script(type="text/babel" src="/app.js")
     include ./components/footer.jade
     
