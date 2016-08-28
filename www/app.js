@@ -123,8 +123,40 @@ var options = [
 //   }
 // })
 
+var OrderBox = React.createClass({
+
+  displayName: "Order Box",
+
+  getInitialState: function(){
+    return {
+      time: "now",
+      meat: "No meat",
+      bread: "no bread",
+      cheese: "No cheese",
+      toppings: "no toppings",
+      condiments: "no condiments",
+      side: "No sides",
+      price: "$0.00",
+    };
+  },
+
+  render: function(){
+    return (
+      <div className="lrg-12 tile bg-white lrg-btm-margin med-pad order-card">
+        <p id="time" className="text type-gamma red sml-btm-margin">Delivery for {this.state.time}</p>
+        <p id="primarysandwich" className="text type-gamma blue">{this.state.meat} on {this.state.bread}</p>
+        <p id="secondarysandwich" className="text lgt-blue type-beta sml-btm-margin">{this.state.cheese}, {this.state.toppings}, {this.state.condiments} </p>
+        <p id="sides" className="text type-gamma blue sml-btm-pad btm-border">{this.state.side}</p>
+        <p id="price" className="text red sml-top-pad type-delta right">{this.state.price}</p>
+      </div>
+    )
+  }
+})
+
 var OrderFlow = React.createClass({
+
   displayName: "Order Flow",
+
   propTypes: {
     options: React.PropTypes.arrayOf(
       React.PropTypes.string
@@ -139,17 +171,27 @@ var OrderFlow = React.createClass({
       toppings: this.props.toppings,
       condiments: this.props.condiments,
       sides: this.props.sides,
-      options: this.props.options
+      options: this.props.options,
+      price: null
     };
+
   },
 
   render: function() {
     var props = this.props;
     var state = this.state;
+    var capProp;
+    var childArray;
+
+    var _log = function(e){
+      childArray = e.target.children;
+      console.log(childArray[0].innerHTML);
+    }.bind(this);
 
     var meatMap = this.props.meats.map(function(meat, index){
       return (
         <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
+          <img className="width-100 med-pad sml-btm-margin" src="/icons/meat-smile.svg" />
           <p className="text type-gamma abs pos-btm-0 sml-btm-pad center width-100">{meat}</p>
         </div>
       )
@@ -174,6 +216,7 @@ var OrderFlow = React.createClass({
     var toppingMap = this.props.toppings.map(function(topping, index){
       return (
         <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
+          <img className="width-100 med-pad sml-btm-margin" src="/icons/tomato-smile.svg" />
           <p className="text type-gamma abs pos-btm-0 sml-btm-pad center width-100">{topping}</p>
         </div>
       )
@@ -191,8 +234,8 @@ var OrderFlow = React.createClass({
 
     var sideMap = this.props.sides.map(function(side, index){
       return (
-        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
-          <p className="text type-gamma abs pos-btm-0 sml-btm-pad center width-100">{side}</p>
+        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index} onClick={_log.bind(this)}>
+          <p className="text type-gamma abs pos-btm-0 sml-btm-pad center width-100" >{side}</p>
         </div>
       )
     });
@@ -232,18 +275,14 @@ var OrderFlow = React.createClass({
           </div>
       </div>
       <div className="lrg-4 sml-12 lrg-push-2">
-        <div className="lrg-12 tile bg-white lrg-btm-margin med-pad order-card">
-          <p className="text type-gamma red sml-btm-margin">Order Time</p>
-          <p className="text type-gamma blue">Meat on Bread</p>
-          <p className="text lgt-blue type-beta sml-btm-margin">Cheese, Condiments, Toppings</p>
-          <p className="text type-gamma blue sml-btm-pad btm-border">Side</p>
-          <p className="text red sml-top-pad type-delta right">$8.00</p>
-        </div>
-        <button className="lrg-12 bg-red center headline text-400 type-delta sml-pad white border-none">Place Order</button>
+        <OrderBox />
+        <a href="/confirm">
+          <button className="lrg-12 bg-red center headline text-400 type-delta sml-pad white border-none">Place Order</button>
+        </a>
       </div>
     </div>
     )
-  }
+  },
 });
 
 
