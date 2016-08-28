@@ -142,7 +142,7 @@ var OrderBox = React.createClass({
 
   render: function(){
     return (
-      <div className="lrg-12 tile bg-white lrg-btm-margin med-pad order-card">
+      <div className="lrg-12 tile bg-white med-btm-margin med-pad order-card">
         <p id="time" className="text type-gamma red sml-btm-margin">Delivery for {this.state.time}</p>
         <p id="primarysandwich" className="text type-gamma blue">{this.state.meat} on {this.state.bread}</p>
         <p id="secondarysandwich" className="text lgt-blue type-beta sml-btm-margin">{this.state.cheese}, {this.state.toppings}, {this.state.condiments} </p>
@@ -277,7 +277,7 @@ var OrderFlow = React.createClass({
       <div className="lrg-4 sml-12 lrg-push-2">
         <OrderBox />
         <a href="/confirm">
-          <button className="lrg-12 bg-red center headline text-400 type-delta sml-pad white border-none">Place Order</button>
+          <button className="lrg-12 bg-red center headline text-400 type-delta sml-pad white border-none lrg-btm-margin">Place Order</button>
         </a>
       </div>
     </div>
