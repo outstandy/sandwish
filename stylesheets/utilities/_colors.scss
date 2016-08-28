@@ -13,6 +13,11 @@ $white: #FFFFFF;
 
 .bg-red {
   background-color: $red;
+  -webkit-transition: background-color 0.15s ease-out;
+  &:hover {
+    background-color: darken($red, 5%);
+    cursor: pointer;
+  }
 }
 
 .blue {
@@ -31,11 +36,24 @@ $white: #FFFFFF;
   color: $mid-gray;
 }
 
+.bg-mid-gray {
+  background-color: $mid-gray;
+}
+
+.white {
+  color: $white;
+}
+
 .bg-white {
   background-color: $white;
 }
 
+
 //Borders
 .btm-border {
   border-bottom: 1px solid $mid-gray;
+}
+
+.border-none {
+  border: none;
 }

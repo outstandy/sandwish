@@ -149,7 +149,7 @@ var OrderFlow = React.createClass({
 
     var meatMap = this.props.meats.map(function(meat, index){
       return (
-        <div className="tile lrg-4 med-3 sml-btm-margin bg-white center rlv" key={index}>
+        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
           <p className="text abs pos-btm-0 sml-btm-pad center width-100">{meat}</p>
         </div>
       )
@@ -157,7 +157,7 @@ var OrderFlow = React.createClass({
 
     var breadMap = this.props.breads.map(function(bread, index){
       return (
-        <div className="tile lrg-4 med-3 sml-btm-margin bg-white center rlv" key={index}>
+        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
           <p className="text abs pos-btm-0 sml-btm-pad center width-100">{bread}</p>
         </div>
       )
@@ -165,7 +165,7 @@ var OrderFlow = React.createClass({
 
     var cheeseMap = this.props.cheeses.map(function(cheese, index){
       return (
-        <div className="tile lrg-4 med-3 sml-btm-margin bg-white center rlv" key={index}>
+        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
           <p className="text abs pos-btm-0 sml-btm-pad center width-100">{cheese}</p>
         </div>
       )
@@ -173,7 +173,7 @@ var OrderFlow = React.createClass({
 
     var toppingMap = this.props.toppings.map(function(topping, index){
       return (
-        <div className="tile lrg-4 med-3 sml-btm-margin bg-white center rlv" key={index}>
+        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
           <p className="text abs pos-btm-0 sml-btm-pad center width-100">{topping}</p>
         </div>
       )
@@ -181,15 +181,17 @@ var OrderFlow = React.createClass({
 
     var condimentMap = this.props.condiments.map(function(condiment, index){
       return (
-        <div className="tile lrg-4 med-3 sml-btm-margin bg-white center rlv" key={index}>
-          <p className="text abs pos-btm-0 sml-btm-pad center width-100">{condiment}</p>
+        // <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
+        <div className="lrg-6 med-6 small-12 sml-btm-margin center" key={index}>
+          <p className="text sml-btm-pad width-100">{condiment}</p>
+          <input className="bg-mid-gray width-100" type="range" />
         </div>
       )
     });
 
     var sideMap = this.props.sides.map(function(side, index){
       return (
-        <div className="tile lrg-4 med-3 sml-btm-margin bg-white center rlv" key={index}>
+        <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
           <p className="text abs pos-btm-0 sml-btm-pad center width-100">{side}</p>
         </div>
       )
@@ -204,7 +206,7 @@ var OrderFlow = React.createClass({
       });
     return (
       <div className="orderFlow">
-        <div className="lrg-6 med-8">
+        <div className="lrg-6 med-8 small-12">
           <div className="row">
             {optionMap}
           </div>
@@ -227,7 +229,16 @@ var OrderFlow = React.createClass({
             {sideMap}
           </div>
       </div>
-      <div className="tile lrg-4 lrg-push-2">Hi!</div>
+      <div className="lrg-4 small-12 lrg-push-2">
+        <div className="lrg-12 tile bg-white lrg-btm-margin med-pad">
+          <p className="text red sml-btm-margin">Order Time</p>
+          <p className="text blue">Meat on Bread</p>
+          <p className="text lgt-blue type-beta sml-btm-margin">Cheese, Condiments, Toppings</p>
+          <p className="text blue sml-btm-pad btm-border">Side</p>
+          <p className="text red sml-top-pad type-delta right">$8.00</p>
+        </div>
+        <button className="lrg-12 bg-red center headline text-400 type-delta sml-pad white border-none">Place Order</button>
+      </div>
     </div>
     )
   }

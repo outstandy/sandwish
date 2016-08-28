@@ -1,5 +1,5 @@
 .tile {
-  height: 8.3333333333em;
+  min-height: 4em;
   border: 1px solid $mid-gray;
   float: left;
   @include media(min-width $lrg-screen){
@@ -8,9 +8,14 @@
   @include media(min-width $med-screen max-width $lrg-screen){
     @include omega(4n);
   }
+  @include media(max-width $med-screen){
+    @include omega(3n);
+  }
   -webkit-transition: all 0.15s ease-out;
   &:hover {
     color: $red;
-    border: 1px solid $red
+    border: 1px solid $red;
+    cursor: pointer;
+    
   }
 }
