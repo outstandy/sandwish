@@ -109,7 +109,7 @@ $sml-screen: 320px;
   }
 }
 
-.small-2 {
+.sml-2 {
   @include media(max-width $med-screen){
     @include span-columns(2);
   }
@@ -231,8 +231,18 @@ $sml-screen: 320px;
   bottom: 0;
 }
 
-.width-100{
+.width-100 {
   width: 100%;
+}
+
+.max-h {
+  max-height: 8em;
+  @include media(max-width $med-screen){
+    max-height: 7em;
+  };
+  @include media(max-width $sml-screen){
+    max-height: 6em;
+  }
 }
 
 .rlv {
