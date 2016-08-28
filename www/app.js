@@ -184,7 +184,7 @@ var OrderFlow = React.createClass({
         // <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
         <div className="lrg-6 med-6 small-12 sml-btm-margin" key={index}>
           <label className="text lgt-blue type-beta tracked caps type-bold">{condiment}</label>
-          <input className="bg-white border width-100 sml-top-margin" type="range" min="1" max="4" step="1" />
+          <input className="bg-white border width-100 sml-top-margin" type="range" />
         </div>
       )
     });
@@ -206,7 +206,7 @@ var OrderFlow = React.createClass({
       });
     return (
       <div className="orderFlow">
-        <div className="lrg-6 med-8 sml-12">
+        <div className="lrg-6 med-8 small-12">
           <div className="row med-btm-margin">
             <p className="text lgt-blue type-beta tracked caps type-bold sml-btm-margin">Pick a meat</p>
             {meatMap}
@@ -231,7 +231,7 @@ var OrderFlow = React.createClass({
             {sideMap}
           </div>
       </div>
-      <div className="lrg-4 sml-12 lrg-push-2">
+      <div className="lrg-4 small-12 lrg-push-2">
         <div className="lrg-12 tile bg-white lrg-btm-margin med-pad order-card">
           <p className="text type-gamma red sml-btm-margin">Order Time</p>
           <p className="text type-gamma blue">Meat on Bread</p>
