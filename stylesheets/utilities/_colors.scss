@@ -54,6 +54,15 @@ $white: #FFFFFF;
   border-bottom: 1px solid $mid-gray;
 }
 
+.top-border {
+  border-bottom: 1px solid $mid-gray;
+}
+
+
+.border {
+  border: 1px solid $mid-gray;
+}
+
 .border-none {
   border: none;
 }

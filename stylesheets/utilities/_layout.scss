@@ -78,32 +78,32 @@ $sml-screen: 320px;
 }
 
 //small column assignments
-.small-12 {
+.sml-12 {
   @include media(max-width $med-screen){
     @include span-columns(12);
   }
 }
-.small-9 {
+.sml-9 {
   @include media(max-width $med-screen){
     @include span-columns(9);
   }
 }
-.small-8 {
+.sml-8 {
   @include media(max-width $med-screen){
     @include span-columns(8);
   }
 }
-.small-6 {
+.sml-6 {
   @include media(max-width $med-screen){
     @include span-columns(6);
   }
 }
-.small-4 {
+.sml-4 {
   @include media(max-width $med-screen){
     @include span-columns(4);
   }
 }
-.small-3 {
+.sml-3 {
   @include media(max-width $med-screen){
     @include span-columns(3);
   }
@@ -136,6 +136,18 @@ $sml-screen: 320px;
 
 .lrg-btm-margin {
   margin-bottom: 2.7777777778em;
+}
+
+.sml-top-margin {
+  margin-top: 0.5555555em;
+}
+
+.med-top-margin {
+  margin-top: 1.7777777778em;
+}
+
+.lrg-top-margin {
+  margin-top: 2.7777777778em;
 }
 
 .center-margin {
