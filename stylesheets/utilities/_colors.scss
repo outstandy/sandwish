@@ -47,22 +47,3 @@ $white: #FFFFFF;
 .bg-white {
   background-color: $white;
 }
-
-
-//Borders
-.btm-border {
-  border-bottom: 1px solid $mid-gray;
-}
-
-.top-border {
-  border-top: 1px solid $mid-gray;
-}
-
-
-.border {
-  border: 1px solid $mid-gray;
-}
-
-.border-none {
-  border: none;
-}
