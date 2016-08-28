@@ -1,11 +1,16 @@
 .tile {
-  width: 150px;
-  height: 150px;
-  border: 1px solid black;
+  height: 8.3333333333em;
+  border: 1px solid $mid-gray;
   float: left;
-}
-
-.block {
-  display: block;
-  float: left;
+  @include media(min-width $lrg-screen){
+    @include omega(3n);
+  }
+  @include media(min-width $med-screen max-width $lrg-screen){
+    @include omega(4n);
+  }
+  -webkit-transition: all 0.15s ease-out;
+  &:hover {
+    color: $red;
+    border: 1px solid $red
+  }
 }
