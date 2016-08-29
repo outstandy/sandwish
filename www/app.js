@@ -270,7 +270,7 @@ var OrderFlow = React.createClass({
       </div>
       <div className="lrg-4 sml-12 lrg-push-2">
         <OrderBox />
-        <a href="./confirm">
+        <a href="../confirm">
           <button className="lrg-12 bg-red center headline text-400 type-delta sml-pad white border-none lrg-btm-margin">Place Order</button>
         </a>
       </div>
