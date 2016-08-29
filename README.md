@@ -63,6 +63,12 @@ A return to the Signed In screen, it allows a quick check of order status while 
     4. Card details
 
 ##Building it
+
+###Sketch
+I did some really quick, basic layouts in Sketch (more fleshed-out wireframes, in a way), and explored some initial look and feel. 
+
+![Sketch screenshot](https://cloud.githubusercontent.com/assets/4308593/18039806/55065b52-6d74-11e6-9ce3-a1b5e9816cb5.png)
+
 ###HTML
 For this I templated/partialized with Jade.
 
