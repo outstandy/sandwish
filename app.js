@@ -186,7 +186,7 @@ var OrderFlow = React.createClass({
     var meatMap = this.props.meats.map(function(meat, index){
       return (
         <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
-          <img className="width-100 med-pad sml-btm-margin" src="/icons/meat-smile.svg" />
+          <img className="width-100 med-pad sml-btm-margin" src="../icons/meat-smile.svg" />
           <p className="text type-gamma abs pos-btm-0 sml-btm-pad center width-100">{meat}</p>
         </div>
       )
@@ -211,7 +211,7 @@ var OrderFlow = React.createClass({
     var toppingMap = this.props.toppings.map(function(topping, index){
       return (
         <div className="tile lrg-4 med-3 small-4 sml-btm-margin bg-white center rlv" key={index}>
-          <img className="width-100 med-pad sml-btm-margin" src="/icons/tomato-smile.svg" />
+          <img className="width-100 med-pad sml-btm-margin" src="../icons/tomato-smile.svg" />
           <p className="text type-gamma abs pos-btm-0 sml-btm-pad center width-100">{topping}</p>
         </div>
       )
