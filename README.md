@@ -15,7 +15,7 @@ This app's designed to use the smallest number of patterns and modules. It makes
 Also sandwiches. 
 
 ###Competitors
-Sandwish is going up against behemoths like Seamless, Grubhub, and Postmates. What makes this better? Simplicity and easy of choice. We need to capitalize on that. 
+Sandwish is going up against behemoths like Seamless, Grubhub, and Postmates. What makes this better? Simplicity and ease (read: limit) of choice. We need to capitalize on that. 
 
 ###User flow
 #####[Home](https://outstandy.github.io/sandwish/ "Home")
