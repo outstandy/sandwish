@@ -14,6 +14,9 @@ This app's designed to use the smallest number of patterns and modules. It makes
 
 Also sandwiches. 
 
+###Competitors
+Sandwish is going up against behemoths like Seamless, Grubhub, and Postmates. What makes this better? Simplicity and easy of choice. We need to capitalize on that. 
+
 ###User flow
 #####[Home](https://outstandy.github.io/sandwish/ "Home")
 Here, the user only has two choices: sign in, or sign up.
@@ -41,9 +44,16 @@ A return to the Signed In screen, it allows a quick check of order status while 
 * People are creatures of habit. While this interface lets you easily reorder your last sandwich, what about saving preset sandwiches? The pattern already exists in this system for modifying if need be, and it could remove a step from the process.
 * To improve efficiency, what's the _least_ amount of information we need to collect during sign-up?
   * Account creation through Facebook or Twitter could cut out the need for a password and email.
-  * How is address info being scrapped? Google Maps? How do we make sure they're in a deliverable area?
+  * How is address info being scraped? Google Maps? How do we make sure they're in a deliverable area, and when do we throw an error if not?
+    1. Thinking more about social media—for more connected users, could work addresses be scraped and cut out another input?
+    2. Do we have partner companies? Can users be tied to an organization (that has a location attached)? It's much easier to input where you work at, rather than the exact address of your office.
   * When is payment info collected? It seems a little weird to make it part of the inital sign-up flow, but it also makes ordering alone much faster, and leaves less room for users to drop off during the ordering process. You're primed to get your sandwich. 
   * Do we take cash? I'd say no—it's ultimately too slow, and fewer people are carrying it.
+  * That leaves us with a signup flow that could just take:
+    1. Name (maybe not even necessary? But nice for personalization)
+    2. Address
+    3. Phone number (text updates, and call on arrival if need be)
+    4. Card details
 
 ##Building it
 ###HTML
