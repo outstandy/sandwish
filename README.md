@@ -73,9 +73,9 @@ I did some really quick, basic layouts in Sketch (more fleshed-out wireframes, i
 For this I templated/partialized with Jade.
 
 ###CSS
-I'm increasingly of the atomic CSS mindset—it's verbose, but it provides a lot more clarity when you've got to navigate larger stylesheets, and makes incremental changes a lot smoother. Semantic classes are still used for structure and targetting, but rarely have anything presentational attached to them. 
+I'm increasingly of the atomic CSS mindset—it's verbose, but it provides a lot more clarity when you've got to navigate larger stylesheets, and makes incremental changes a lot smoother. Semantic classes are still used for structure and targetting, but rarely have anything presentational attached to them. Preprocessed with Sass. 
 
 The super basic grid framework is Bourbon Neat. I usually roll my own `flexbox` layout but for speed's sake I went with something a little more built-out. 
 
 ###JS
-I started a real rough React app, which I'm curious to flesh out more. The constantly updating UI (order parts, swapping out icons, visually 'building' the sandwich) seems to mesh really well with React's components base. I need to architect the data better and refactor. Nice-to-haves, like saved orders and delivery status updates could also benefit. 
+I started a real rough React app, which I'm curious to flesh out more; at the moment all it's doing is some mapping and initial state-setting. The constantly updating UI (order parts, swapping out icons, visually 'building' the sandwich) seems to mesh really well with React's reusable components basis. Nice-to-haves, like saved orders and delivery status updates could also benefit from that. 
