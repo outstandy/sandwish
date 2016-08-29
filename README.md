@@ -17,6 +17,13 @@ Also sandwiches.
 ###Competitors
 Sandwish is going up against behemoths like Seamless, Grubhub, and Postmates. What makes this better? Simplicity and ease (read: limit) of choice. We need to capitalize on that. 
 
+###Sketches/Wireframes
+I like to sketch my wireframes on paper (at least initially). It's faster and feels more disposable, so no one gets too attached to a single solution from the get-go.
+
+![Sketch 1](https://cloud.githubusercontent.com/assets/4308593/18039680/07ede926-6d73-11e6-807b-cfc99def44b7.JPG)
+
+![Sketch 2](https://cloud.githubusercontent.com/assets/4308593/18039679/07edbf50-6d73-11e6-9f8b-7bb64eaf7736.JPG)
+
 ###User flow
 #####[Home](https://outstandy.github.io/sandwish/ "Home")
 Here, the user only has two choices: sign in, or sign up.
